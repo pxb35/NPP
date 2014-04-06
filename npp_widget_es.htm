@@ -1,0 +1,676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Notificación de Prácticas de Privacidad</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" />
+	<meta name="description" content=" " />
+	<meta name="keywords" content=" " />	
+
+	<meta name="distribution" content="global" />
+    <meta name="revisit-after" content="5 Days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="jq/npp_themes.min.css" />
+    <link rel="stylesheet" href="jq/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="npp.css" />
+    <script src="jq/jquery-1.10.1.min.js"></script>
+	<script src="jq/jquery.mobile-1.3.2.min.js"></script>
+	<script src="npp.js"></script>
+	
+</head>
+<body>
+
+	<!-- set language so correct customization file is loaded -->
+	<script type="text/javascript">
+		var glob_language="es";
+	</script>
+	
+	<div data-role="page" id="main_page">	
+		<div data-theme="c" data-role="header">
+			<div class="ui-bar ui-bar-c">
+				<table class="width_100 hdr_table"><tr>
+					<td class="width_100"><span class="entity_name npp_small_text"></span><br />
+						<span class="npp_hdr_title">Notificación de Prácticas de Privacidad</span>
+					</td>
+					<td class="language_button">
+						<a id="language_button" href="#" data-theme="c" data-role="button" data-mini="true" 
+								onclick="change_language('npp_widget.htm');">English</a>
+					</td>
+				</tr></table>
+			</div>
+		</div>
+		
+		<div data-role="content">
+			<img src="images/folders.png" alt="folders" class="folders_img"/>
+			<div class="npp_red npp_left npp_tagline">
+				Su información.<br />
+				Sus derechos.<br />
+				Nuestras responsabilidades.
+			</div>
+			
+			<div class="npp_clear npp_tagline_sub">
+				Esta notificación describe cómo puede utilizarse y divulgarse su información médica, y cómo puede acceder usted a esta información.
+				<b>Revísela con cuidado.</b>
+			</div>
+			
+			<div class="npp_clear npp_summary_container">
+				<div class="npp_dot">
+					<img src="images/red_dot.png" alt="Sus derechos" />
+				</div>
+				<div class="npp_dot npp_dot_text">
+					<table><tr>
+						<td>Sus<br />derechos</td>
+					</tr></table>
+				</div>
+				<div class="npp_round_border_red npp_details_header_indent npp_details_header">
+					<table class="width_100"><tr>
+						<td class="width_100">
+							<p>
+								<span class="npp_red npp_details_header_span1">
+							        Cuando se trata de su información médica, usted tiene ciertos derechos.
+							    </span>
+								<span class="npp_details_header_span2">
+									Esta sección explica sus derechos y algunas de nuestras responsabilidades para ayudarlo.
+									<a href="#" id="rights_more" onclick="more_detail(0,'rights');">  mostrar&nbsp;más</a>
+									<a href="#" class="rights_summary_list" onclick="more_detail(1,'rights');">  mostrar&nbsp;menos</a>
+								</span>
+							</p>					
+						</td>
+						<td>
+							<a href="#" data-theme="b" data-role="button" data-iconpos="notext" data-icon="bars" 
+									class="ui-icon-nodisc" data-iconshadow="false" data-inline="true"
+									onclick="show_details('rights_details','');">lista de los derechos</a>
+						</td>
+					</tr></table>
+					<div class="rights_summary_list all_summary_list_div" >
+						<ul class="npp_detail_list" data-inset="true" data-role="listview" data-theme="c">
+				        	<li class="npp_detail_list_hdr">Usted cuenta con los siguientes derechos:</li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights0');"><span>Obtener una copia de su historial médico en papel o en formato electrónico.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights1');"><span>Corregir en papel o en formato electrónico su historial médico.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights2');"><span>Solicitar comunicación confidencial.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights3');"><span>Pedirnos que limitemos la información que compartimos.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights4');"><span>Recibir una lista de aquellos con quienes hemos compartido su información.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights5');"><span>Obtener una copia de esta notificación de privacidad.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights6');"><span>Elegir a alguien que actúe en su nombre.</span></a></li>
+				        	<li><a href="#" onclick="show_details('rights_details','rights7');"><span>Presentar una queja si considera que se violaron sus derechos de privacidad.</span></a></li>
+				        </ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="npp_clear npp_summary_container">
+				<div class="npp_dot">
+					<img src="images/blue_dot.png" alt="Sus opciones" />
+				</div>
+				<div class="npp_dot npp_dot_text">
+					<table><tr>
+						<td>Sus<br />opciones</td>
+					</tr></table>
+				</div>
+				<div class="npp_round_border_blue npp_details_header npp_details_header_indent">
+					<table class="width_100"><tr>
+						<td class="width_100">
+							<p>
+								<span class="npp_blue npp_details_header_span1">
+							        Para determinada información médica, puede decirnos sus decisiones sobre qué compartimos.
+							    </span>
+								<span class="npp_details_header_span2">
+									Si tiene una preferencia clara de cómo compartimos
+									su información en las situaciones descritas debajo, comuníquese con nosotros. 
+									Díganos qué quiere que hagamos, y seguiremos sus instrucciones.
+									<a href="#" id="choices_more" onclick="more_detail(0,'choices');">  mostrar&nbsp;más</a>
+									<a href="#" class="choices_summary_list" onclick="more_detail(1,'choices');">  mostrar&nbsp;menos</a>
+								</span>
+							</p>					
+						</td>
+						<td>
+							<a href="#" data-theme="b" data-role="button" data-iconpos="notext" data-icon="bars" 
+									class="ui-icon-nodisc" data-iconshadow="false" data-inline="true"
+									onclick="show_details('choices_details','');">opciones lista</a>
+						</td>
+					</tr></table>
+					<div class="choices_summary_list all_summary_list_div" >
+						<ul class="npp_detail_list" data-inset="true" data-role="listview" data-theme="c">
+				        	<li class="npp_detail_list_hdr">Tiene algunas opciones con respecto a la manera en que utilizamos y compartimos información cuando:</li>
+				        	<li><a href="#" onclick="show_details('choices_details','choices0');"><span>Le contamos a su familia y amigos sobre su estado personal.</span></a></li>
+				        	<li><a href="#" onclick="show_details('choices_details','choices0');"><span>Proporcionamos alivio en caso de una catástrofe.</span></a></li>
+				        	<li><a href="#" onclick="show_details('choices_details','choices0');"><span>Lo incluimos en un directorio hospitalario.</span></a></li>
+				        	<li><a href="#" onclick="show_details('choices_details','choices1');"><span>Proporcionamos atención médica mental.</span></a></li>
+				        	<li><a href="#" onclick="show_details('choices_details','choices1');"><span>Comercializamos nuestros servicios y vendemos su información.</span></a></li>
+				        	<li><a href="#" onclick="show_details('choices_details','choices2');"><span>Recaudamos fondos.</span></a></li>
+				        </ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="npp_clear npp_summary_container">
+				<div class="npp_dot">
+					<img src="images/orange_dot.png" alt="Nuestros usos y divulgaciones" />
+				</div>
+				<div class="npp_dot npp_dot_text">
+					<table><tr>
+						<td style="font-size:0.9em;">Nuestros<br />usos&nbsp;y<br />divulgaciones<br />&nbsp;</td>
+					</tr></table>
+				</div>
+				<div class="npp_round_border_orange npp_details_header npp_details_header_indent">
+					<table class="width_100"><tr>
+						<td class="width_100">
+							<p>
+								<span class="npp_orange npp_details_header_span1">
+							        Por lo general, ¿cómo utilizamos o compartimos su información médica?
+							    </span>
+								<span class="npp_details_header_span2">
+									Por lo general, utilizamos o compartimos su información médica de las siguientes maneras.
+									<a href="#" id="uses_more" onclick="more_detail(0,'uses');">  mostrar&nbsp;más</a>
+									<a href="#" class="uses_summary_list" onclick="more_detail(1,'uses');">  mostrar&nbsp;menos</a>
+								</span>
+							</p>					
+						</td>
+						<td>
+							<a href="#" data-theme="b" data-role="button" data-iconpos="notext" data-icon="bars" 
+									class="ui-icon-nodisc" data-iconshadow="false" data-inline="true"
+									onclick="show_details('uses_details','');">lista de usos</a>
+						</td>
+					</tr></table>
+					<div class="uses_summary_list all_summary_list_div" >
+						<ul class="npp_detail_list" data-inset="true" data-role="listview" data-theme="c">
+				        	<li class="npp_detail_list_hdr">Podemos utilizar y compartir su información cuando:</li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses0');"><span>Lo atendemos.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses1');"><span>Dirigimos nuestra organización.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses2');"><span>Facturamos por sus servicios.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses3');"><span>Ayudamos con asuntos de seguridad y salud pública.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses4');"><span>Realizamos investigaciones médicas.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses5');"><span>Cumplimos con la ley.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses6');"><span>Respondemos a las solicitudes de donación de órganos y tejidos.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses7');"><span>Trabajamos con un médico forense o director funerario.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses8');"><span>Tratamos la compensación de trabajadores, el cumplimiento de la ley y otras solicitudes gubernamentales.</span></a></li>
+				        	<li><a href="#" onclick="show_details('uses_details','uses9');"><span>Respondemos a demandas y acciones legales.</span></a></li>
+				        </ul>
+					</div>
+				</div>
+			</div>
+					
+			<div class="npp_clear npp_summary_container">
+				<div class="npp_dot">
+					<img src="images/green_dot.png" alt="our responsibilities" />
+				</div>
+				<div class="npp_dot npp_dot_text">
+					<table><tr>
+						<td>Nuestras<br />responsabil-<br />idades</td>
+					</tr></table>
+				</div>
+				<div class="npp_round_border_green npp_details_header npp_details_header_indent">
+					<table class="width_100"><tr>
+						<td class="width_100">
+							<p>
+								<span class="npp_green npp_details_header_span1">
+							        Nuestras responsabilidades
+							    </span>
+								<span class="npp_details_header_span2">
+									<ul class="npp_list list_small_text">
+							        	<li>Estamos obligados por ley a mantener la privacidad y seguridad de su información médica protegida.</li>
+							        	<li>Le haremos saber de inmediato si ocurre un incumplimiento que pueda haber comprometido la privacidad o seguridad de su información.</li>
+							        	<li>Debemos seguir los deberes y prácticas de privacidad descritas en esta notificación y entregarle una copia de la misma.</li>
+							        	<li>No utilizaremos ni compartiremos su información de otra manera distinta a la aquí descrita, a menos que usted nos diga por escrito que podemos hacerlo. Si nos dice que podemos, puede cambiar de parecer en cualquier momento. Háganos saber por escrito si usted cambia de parecer.</li>
+							        </ul>
+									<a style="margin-left:25px;" href="#" id="responsibilities_more" onclick="more_detail(0,'responsibilities');">  mostrar&nbsp;más</a>
+									<a style="margin-left:25px;" href="#" class="responsibilities_summary_list" onclick="more_detail(1,'responsibilities');">  mostrar&nbsp;menos</a>
+								</span>
+							</p>					
+						</td>
+					</tr></table>
+					<div class="responsibilities_summary_list all_summary_list_div" >
+			        	<div class="npp_round_border_green" style="margin-top:20px;">
+				        	<p class="responsibilities_info">Para mayor información, visite: 
+				        		<br />
+				        		<a style="color:#5789A2;cursor:pointer;" src="#" 
+										onclick="window.open('http://www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/factsheets_spanish.html');" >
+								www.hhs.gov/ocr/privacy/hipaa/understanding/ consumers/factsheets_spanish.html
+								</a>, disponible en español.
+							<br />
+							<br />
+							<span class="npp_green"><b>Cambios a los términos de esta notificación</b></span><br />
+							Podemos modificar los términos de esta notificación, y los cambios se aplicarán a toda la información que tenemos sobre usted. La nueva notificación estará disponible según se solicite, en nuestra oficina, y en nuestro sitio web.</p>	
+							<div class="responsibilities_info">
+								<span class="effective_date"></span>
+							</div>
+							<div class="responsibilities_info">
+								<p><b>Esta Notificación de Prácticas de Privacidad se aplica a las siguientes organizaciones.</b></p>
+								<span class="ohca_sharing"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		    
+		</div>
+		
+		<div data-theme="c" data-role="footer">
+			<div class="ui-bar ui-bar-c">
+				<table class="width_100"><tr>
+					<td class="width_100 npp_small_text">
+						Oficial de Privacidad:&nbsp;
+						<span class="privacy_official_name"></span> | 
+						<span class="privacy_official_phone"></span> | 
+						<span class="privacy_official_email"></span><br />
+						<a style="color:#5789A2;cursor:pointer;" src="#" onclick="window.open('js-supplied-site');" 
+								class="entity_website_src">
+							<span class="entity_name"></span>
+						</a>
+						<br />
+						<span class="entity_address" ></span>
+					</td>
+				</tr></table>
+			</div>
+		</div>
+	</div>
+	
+	<div style="display:none;" id="customization_xml"></div>
+	<input type="hidden" id="note_text" value="Nota: " />
+	<input type="hidden" id="other_limits" value="Otras restricciones que siguen: " />
+	<input type="hidden" id="effective_date" value="Fecha de vigencia del Aviso: " />
+	
+	<div data-role="page" id="rights_details">
+	
+		<div id="rights_details_header" data-theme="c" data-role="header" data-position="fixed">
+			<div class="ui-bar ui-bar-c">
+				<table class="width_100"><tr>
+					<td class="width_100"><span class="entity_name npp_small_text"></span><br />
+						<span class="npp_hdr_title">Notificación de Prácticas de Privacidad</span></td>
+					<td>
+						<a href="#" data-role="button" onclick="go_back('main_page');" data-icon="back" data-theme="d">volver</a>
+					</td>
+				</tr></table>
+			</div>
+		</div>
+		
+		<div data-role="content">
+			<div class="npp_round_border_red npp_details_header">
+				<p>
+					<span class="npp_red npp_details_header_span1">
+				        Cuando se trata de su información médica, usted tiene ciertos derechos.
+				    </span>
+					<span class="npp_details_header_span2">
+						Esta sección explica sus derechos y algunas de nuestras responsabilidades para ayudarlo.
+					</span>
+				</p>
+			</div>
+			<br />
+					
+			<div id="rights0" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Obtener una copia en formato electrónico o en papel de su historial médico
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Puede solicitar que le muestren o le entreguen una copia en formato electrónico o
+en papel de su historial médico y otra información médica que tengamos de usted.
+Pregúntenos cómo hacerlo.</li>
+						<li>Le entregaremos una copia o un resumen de su información médica, generalmente
+dentro de 30 días de su solicitud. Podemos cobrar un cargo razonable en base al costo.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights1" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Solicitarnos que corrijamos su historial médico
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Puede solicitarnos que corrijamos la información médica sobre usted que piensa
+que es incorrecta o está incompleta. Pregúntenos cómo hacerlo.</li>
+						<li>Podemos decir “no” a su solicitud, pero le daremos una razón por escrito dentro de 60 días.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights2" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Solicitar comunicaciones confidenciales
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Puede solicitarnos que nos comuniquemos con usted de una manera específica
+(por ejemplo, por teléfono particular o laboral) o que enviemos la correspondencia
+a una dirección diferente.</li>
+						<li>Le diremos “sí” a todas las solicitudes razonables..</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights3" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Solicitarnos que limitemos lo que utilizamos o compartimos
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Puede solicitarnos que no utilicemos ni compartamos determinada información médica
+para el tratamiento, pago o para nuestras operaciones. No estamos obligados a aceptar
+su solicitud, y podemos decir “no” si esto afectara su atención.</li>
+						<li>Si paga por un servicio o artículo de atención médica por cuenta propia en su totalidad,
+puede solicitarnos que no compartamos esa información con el propósito de pago o
+nuestras operaciones con su aseguradora médica. Diremos “sí” a menos que una ley
+requiera que compartamos dicha información.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights4" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Recibir una lista de aquellos con quienes hemos compartido información
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Puede solicitar una lista (informe) de las veces que hemos compartido su información
+médica durante los seis años previos a la fecha de su solicitud, con quién la hemos
+compartido y por qué.</li>
+						<li>Incluiremos todas las divulgaciones excepto aquellas sobre el tratamiento, pago y
+operaciones de atención médica, y otras divulgaciones determinadas (como cualquiera
+de las que usted nos haya solicitado hacer). Le proporcionaremos un informe gratis por
+año pero cobraremos un cargo razonable en base al costo si usted solicita otro dentro de
+los 12 meses.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights5" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Obtener una copia de esta notificación de privacidad
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Puede solicitar una copia en papel de esta notificación en cualquier momento, incluso
+si acordó recibir la notificación de forma electrónica. Le proporcionaremos una copia en
+papel de inmediato.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights6" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Elegir a alguien para que actúe en su nombre
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Si usted le ha otorgado a alguien la representación médica o si alguien es su tutor legal,
+aquella persona puede ejercer sus derechos y tomar decisiones sobre su información médica.</li>
+						<li>Nos aseguraremos de que la persona tenga esta autoridad y pueda actuar en su nombre
+antes de tomar cualquier medida.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="rights7" class="npp_clear npp_dotted">
+				<div class="npp_red npp_left npp_details_item_1">
+					Presentar una queja si considera que se violaron sus derechos
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Si considera que hemos violado sus derechos, puede presentar una queja comunicándose
+con nosotros por medio de la información de la página 1.</li>
+						<li>Puede presentar una queja en la Oficina de Derechos Civiles del Departamento de Salud
+y Servicios Humanos enviando una carta a: Department of Health and Human Services,
+200 Independence Avenue, S.W., Washington, D.C. 20201, llamando al 1-800-368-
+1019 o visitando 
+						<a style="color:#5789A2;cursor:pointer;" src="#" 
+								onclick="window.open('http://www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/factsheets_spanish.html');" >
+							www.hhs.gov/ocr/privacy/hipaa/understanding/ consumers/factsheets_spanish.html
+						</a>, los últimos dos disponibles en español. </li>
+						<li>No tomaremos represalias en su contra por la presentación de una queja.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		</div>
+	</div>
+	
+	<div data-role="page" id="choices_details">
+	
+		<div id="choices_details_header" data-theme="c" data-role="header" data-position="fixed">
+			<div class="ui-bar ui-bar-c">
+				<table class="width_100"><tr>
+					<td class="width_100"><span class="entity_name npp_small_text"></span><br />
+						<span class="npp_hdr_title">Notificación de Prácticas de Privacidad</span></td>
+					<td>
+						<a href="#" data-role="button" onclick="go_back('main_page');" data-icon="back" data-theme="d">volver</a>
+					</td>
+				</tr></table>
+			</div>
+		</div>
+		
+		<div data-role="content">
+			<div class="npp_round_border_blue npp_details_header">
+				<p>
+					<span class="npp_blue npp_details_header_span1">
+				        Para determinada información médica, puede decirnos sus decisiones sobre qué compartimos.
+				    </span>
+					<span class="npp_details_header_span2">
+						Si tiene una preferencia clara de cómo compartimos
+su información en las situaciones descritas debajo, comuníquese con nosotros. Díganos qué quiere que hagamos, y seguiremos sus instrucciones.
+					</span>
+				</p>
+			</div>
+			<br />
+			<div id="choices0" class="npp_clear npp_dotted">
+				<div class="npp_blue npp_left npp_details_item_1">
+					En estos casos, tiene tanto el derecho como la opción de pedirnos que:
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Compartamos información con su familia, amigos cercanos u otras personas involucradas en su atención.</li>
+						<li>Compartamos información en una situación de alivio en caso de una catástrofe.</li>
+						<li>Incluyamos su información en un directorio hospitalario.</li>
+					</ul>
+					<div class="npp_list_item_no_bullet">Si no puede decirnos su preferencia, por ejemplo, si se encuentra inconsciente, podemos seguir adelante y compartir su información si creemos que es para beneficio propio. También podemos compartir su información cuando sea necesario para reducir una amenaza grave e inminente a la salud o seguridad.</div>
+				</div>
+			</div>
+			<br />
+			<div id="choices1" class="npp_clear npp_dotted">
+				<div class="npp_blue npp_left npp_details_item_1">
+					En estos casos, nunca compartiremos su información a menos que nos entregue un permiso por escrito:
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Propósitos de mercadeo.</li>
+						<li>Venta de su información.</li>
+						<li>La mayoría de los casos en que se comparten notas de psicoterapia.</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="choices2" class="npp_clear npp_dotted">
+				<div class="npp_blue npp_left npp_details_item_1">
+					En el caso de recaudación de fondos:
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos comunicarnos con usted por temas de recaudación, pero puede pedirnos que no lo volvamos a contactar.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		</div>
+	</div>
+	
+	<div data-role="page" id="uses_details">
+	
+		<div id="uses_details_header" data-theme="c" data-role="header" data-position="fixed">
+			<div class="ui-bar ui-bar-c">
+				<table class="width_100"><tr>
+					<td class="width_100"><span class="entity_name npp_small_text"></span><br />
+						<span class="npp_hdr_title">Notificación de Prácticas de Privacidad</span></td>
+					<td>
+						<a href="#" data-role="button" onclick="go_back('main_page');" data-icon="back" data-theme="d">volver</a>
+					</td>
+				</tr></table>
+			</div>
+		</div>
+		
+		<div data-role="content">
+			<div class="npp_round_border_orange npp_details_header">
+				<p>
+					<span class="npp_orange npp_details_header_span1">
+				        Por lo general, ¿cómo utilizamos o compartimos su información médica?
+				    </span>
+					<span class="npp_details_header_span2">
+						Por lo general, utilizamos o compartimos su información médica de las siguientes maneras.
+					</span>
+				</p>
+			</div>
+			<br />
+			<div id="uses0" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_a">
+					Tratamiento
+				</div>
+				<div class="npp_left npp_details_item_b">
+					<ul>
+						<li>Podemos utilizar su información médica y compartirla con otros profesionales que lo estén tratando.</li>
+					</ul>
+				</div>
+				<div class="npp_left npp_details_item_c">
+					<span class="example_accent"> Ejemplo:</span> Un médico que lo está tratando por una lesión le consulta a otro doctor sobre su estado de salud general.
+				</div>
+			</div>
+			<div id="uses1" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_a">
+					Dirigir nuestra organización
+				</div>
+				<div class="npp_left npp_details_item_b">
+					<ul>
+						<li>Podemos utilizar y divulgar su información para llevar a cabo nuestra práctica, mejorar su atención y comunicarnos con usted cuando sea necesario.</li>
+					</ul>
+				</div>
+				<div class="npp_left npp_details_item_c">
+					<span class="example_accent">Ejemplo:</span> Utilizamos información médica sobre usted para administrar su tratamiento y servicios.
+				</div>
+			</div>
+			<div id="uses2" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_a">
+					Facturar por sus servicios
+				</div>
+				<div class="npp_left npp_details_item_b">
+					<ul>
+						<li>Podemos utilizar y compartir su información para facturar y obtener el pago de los planes de salud y otras entidades.</li>
+					</ul>
+				</div>
+				<div class="npp_left npp_details_item_c">
+					<span class="example_accent">Ejemplo:</span> Entregamos información acerca de usted a su plan de seguro médico para que éste pague por sus servicios.
+				</div>
+			</div>
+			<div class="npp_clear npp_dotted">
+				<br />
+				<p  class="npp_insert"><span class="npp_orange"><b>¿De qué otra manera podemos utilizar o compartir su información médica?</b></span> 
+				Se nos permite o exige compartir su información de otras maneras (por lo general, de maneras que contribuyan al bien público, como la salud pública e investigaciones médicas). Tenemos que reunir muchas condiciones legales antes de poder compartir su información con dichos propósitos. Para más información, visite: 
+					<a style="color:#5789A2;cursor:pointer;" src="#" 
+						onclick="window.open('http://www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/factsheets_spanish.html');" >
+						www.hhs.gov/ocr/privacy/hipaa/understanding/ consumers/factsheets_spanish.html
+					</a>, disponible en español.
+				</p>
+			</div>
+			<br />
+			<div id="uses3" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Ayudar con asuntos de salud pública y seguridad
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos compartir su información médica en determinadas situaciones, como:
+							<ul>
+								<li style="margin-bottom:0;">Prevención de enfermedades.</li>
+								<li style="margin-bottom:0;">Ayuda con el retiro de productos del mercado.</li>
+								<li style="margin-bottom:0;">Informe de reacciones adversas a los medicamentos.</li>
+								<li style="margin-bottom:0;">Informe de sospecha de abuso, negligencia o violencia doméstica.</li>
+								<li style="margin-bottom:0;">Prevención o reducción de amenaza grave hacia la salud o seguridad de alguien.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="uses4" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Realizar investigaciones médicas
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos utilizar o compartir su información para investigación de salud.</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="uses5" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Cumplir con la ley
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos compartir su información si las leyes federales o estatales lo requieren, incluyendo compartir la información con el Departamento de Salud y Servicios Humanos si éste quiere comprobar que cumplimos con la Ley de Privacidad Federal.</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="uses6" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Responder a las solicitudes de donación de órganos
+y tejidos
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos compartir su información médica con las organizaciones de procuración de órganos.</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="uses7" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Trabajar con un médico forense o director funerario
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos compartir información médica con un oficial de investigación forense, médico forense o director funerario cuando un individuo fallece.</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="uses8" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Tratar la compensación de trabajadores, el cumplimiento de la ley y otras solicitudes gubernamentales
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos utilizar o compartir su información médica:
+							<ul>
+								<li style="margin-bottom:0;">En reclamos de compensación de trabajadores.</li>
+								<li style="margin-bottom:0;">A los fines de cumplir con la ley o con un personal de las fuerzas de seguridad.</li>
+								<li style="margin-bottom:0;">Con agencias de supervisión sanitaria para las actividades autorizadas por ley.</li>
+								<li style="margin-bottom:0;">En el caso de funciones gubernamentales especiales, como los servicios de protección presidencial, seguridad nacional y servicios militares.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br />
+			<div id="uses9" class="npp_clear npp_dotted">
+				<div class="npp_orange npp_left npp_details_item_1">
+					Responder a demandas
+y acciones legales
+				</div>
+				<div class="npp_left npp_details_item_2">
+					<ul>
+						<li>Podemos compartir su información médica en respuesta a una orden administrativa o de un tribunal o en respuesta a una citación.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="npp_clear npp_dotted">
+				<span class="special_notes"></span>
+				<span class="other_limits"></span>
+				<span class="blue_button"></span>
+			</div>
+			
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		</div>
+	</div>
+	
+</body>
+</html>

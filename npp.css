@@ -1,0 +1,340 @@
+@CHARSET "ISO-8859-1";
+
+/*
+*	CSS file to support Notice of Privacy Practices Widget
+*	April 6, 2014 - Pete Brower
+*/
+
+.rights_summary_list,.choices_summary_list,.uses_summary_list,.responsibilities_summary_list {
+	display:none;
+}
+
+.all_summary_list_div {
+	margin-left:25px;
+	margin-right:20px;
+	display:none;
+}
+
+.more_list,.less_list {
+	list-style: none;
+	font-size:1.0em;
+}
+
+.more_list li:before {
+	content: "\2193 \0020";
+}
+   
+.less_list li:before {
+	content: "\2191 \0020";
+}
+   
+.width_100 {
+	width:100%;
+}
+
+.folders_img {
+	width:180px;
+	float:left;
+	margin:5px;
+}
+
+.responsibilities_info {
+	margin:10px 20px;
+	font-size:0.9em;
+}
+
+.example_accent {
+	color:#e0861a;
+}
+
+.list_small_text {
+	font-size:0.9em;
+}
+
+.npp_dot {
+	position:absolute;
+}
+
+.npp_dot_text {
+	height:103px;
+	width:103px;
+}
+
+.npp_dot_text table {
+	width:100%;
+	height:100%;
+}
+
+.npp_dot_text td {
+	color: #FFFFFF;
+	font-size: 1.0em;
+	font-weight: bold;
+	height: 100%;
+	text-align: center;
+	text-shadow: none;
+	width: 100%;
+	vertical-align:middle;
+}
+
+.npp_details_header,.npp_details_header_indent {
+	margin-top:0;
+}
+
+.npp_details_header_indent {
+	margin-left:80px;
+}
+
+.npp_summary_container {
+	min-height:103px;
+	margin-bottom:15px;
+}
+
+.npp_details_header p {
+	margin:0 0 0 25px;
+}
+
+.npp_details_header div div {
+	margin:0;
+}
+
+.npp_details_header div div p {
+	margin:0;
+}
+
+.npp_details_header td, .hdr_table td {
+	vertical-align:top;
+}
+
+.npp_details_header a {
+	text-decoration:none;
+	font-size:1.0em;
+}
+
+.npp_details_header a:hover {
+	text-decoration:underline;
+}
+
+.npp_no_bullet {
+	list-style-type:none;
+}
+
+.npp_hdr_title {
+	font-size:1.3em;
+}
+
+.npp_small_text {
+	font-size:0.8em;
+}
+
+.npp_xlarge_text {
+	font-size:1.5em;
+}
+
+.npp_summary {
+	font-size:1.4em;
+	white-space:normal;
+	text-shadow:none;
+}
+
+.npp_summary_small {
+	font-size:1.0em;
+	white-space:normal;
+	text-shadow:none;
+}
+
+.npp_margin_large {
+	 margin:20px;
+}
+
+.npp_detail_list_hdr {
+	font-size:1.0em;
+	font-weight:bold;
+}
+
+.npp_detail_list li {
+	white-space:normal;
+	font-weight:normal;
+}
+
+.npp_detail_list span {
+	white-space:normal;
+	font-weight:normal;
+	font-size:0.9em;
+}
+
+.npp_left {
+	float:left;
+}
+
+.npp_tagline {
+	margin:20px;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+.npp_tagline_sub {
+	margin:10px 10px 20px;
+	font-size:0.9em;	
+}
+
+.npp_clear {
+	clear:both;
+}
+
+.npp_wrap {
+	white-space:normal;
+}
+
+.npp_details_header_span1 {
+	 font-size:1.0em;
+	 font-weight:bold;
+}
+
+.npp_details_header_span2 {
+	font-size:0.9em;	
+}
+
+.npp_dotted {
+	border-top:1px gray dotted;	
+}
+
+.npp_details_item_1,.npp_details_item_a {
+	text-align:right;
+	margin-top:0.9em;
+	width:30%;
+	font-size:1.0em;
+	font-weight:bold;
+	margin-bottom:0.7em;
+}
+
+.npp_details_item_2 {
+	width: 70%;
+}
+
+.npp_details_item_a {
+	width: 20%;
+}
+
+.npp_details_item_b,.npp_details_item_c {
+	 width:38%;
+	 font-size:0.9em;
+}
+
+.npp_details_item_c {
+	font-style:italic;
+	margin:0.9em 0 0.9em 0.9em;
+}
+
+.npp_insert {
+	font-size:0.9em;
+	margin: 0;
+}
+
+.npp_list_item_no_bullet {
+	font-style:italic;
+	margin: 1.2em;
+	font-size:0.9em;
+}
+
+div.npp_details_item_2 ul li, .npp_list li {
+	margin-bottom:0.5em;
+	font-size:0.9em;
+}
+
+.npp_red {
+	color: #d2232b;
+}
+
+.npp_blue {
+	color: #0066a6;
+}
+
+.npp_orange {
+	color: #e0861a;	
+}
+
+.npp_green {
+	color: #389339;	
+}
+
+.npp_round_border_red, .npp_round_border_blue, .npp_round_border_green, .npp_round_border_orange  {
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    padding: 10px;
+}
+
+.npp_round_border_red {
+	border: 2px solid #d2232b;
+}
+
+.npp_round_border_blue {
+	border: 2px solid #0066a6;
+}
+
+.npp_round_border_green {
+	border: 2px solid #389339;	
+}
+
+.npp_round_border_orange  {
+	border: 2px solid #e0861a;	
+}
+	
+.npp_frame_top, .npp_frame_bottom {
+    background-color: #006699;
+    color: #ffffff;
+    min-height: 40px;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.npp_frame_top {
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -khtml-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.npp_frame_bottom {
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -khtml-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.npp_rounded-corners, .npp_container_div, .npp_button {
+     -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.npp_button {
+	text-align:center;
+	border: 1px solid gray;
+    background: #eeeeee;
+    vertical-align: middle;
+}
+
+.npp_container_div {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.npp_clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.npp_float {
+	float: left;
+	display: block;
+}

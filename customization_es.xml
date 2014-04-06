@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Instructions: Enter your information below between the xml tags.  For example,			-->
+<!-- entity name would look something like:		 											-->
+<!-- 											 											-->
+<!-- 	<entity_name>Berks County General Medical Center</entity_name>						-->
+<!-- 											 											-->
+<!-- The information you enter is merged as HTML, so valid HTML tags may be used 			-->
+<!-- if desired.								 											-->
+
+<entity>
+	
+	<!-- Insert the covered entity’s name 											-->
+		
+		<entity_name>[edit customization_es.xml to change]</entity_name>
+		
+	<!-- Insert the covered entity’s address, website and privacy official’s phone 	-->
+	<!-- and email address and other contact information 							-->
+		
+		<entity_address></entity_address>
+		<entity_website></entity_website>
+		<privacy_official_name>[edit customization_es.xml to change]</privacy_official_name>
+		<privacy_official_phone></privacy_official_phone>
+		<privacy_official_email></privacy_official_email>
+		
+	<!-- Insert any special notes that apply to your entity’s practices								-->
+	<!-- such as [for healthcare provider]: “we never market or sell personal information.”			-->
+	<!-- [for health plans]: “we do not create or manage a hospital directory” or “we do not 		-->
+	<!-- create or maintain psychotherapy notes at this practice.” 									-->
+		
+		<special_notes>[edit customization_es.xml to change]</special_notes>
+		
+	<!-- The Privacy Rule requires you to describe any state or other laws that						-->
+	<!-- require greater limits on disclosures. For example, “We will never share any substance		-->
+	<!-- abuse treatment records without your written permission.” Insert this type of				-->
+	<!-- information here. If no laws with greater limits apply to your entity, no information		-->
+	<!-- needs to be added.																			-->
+		
+		<other_limits></other_limits>	
+	
+	<!-- If your entity provides patients with access to their health information via the			-->
+	<!-- Blue Button protocol, you may want to insert a reference to it here.						-->	
+		
+		<blue_button></blue_button>
+		
+	<!-- Insert Effective Date of Notice here.														-->
+		
+		<effective_date>[edit customization_es.xml to change]</effective_date>
+		
+	<!-- If your entity is part of an OHCA (organized health care arrangement)						-->
+	<!-- that has agreed to a joint notice, use this space to inform your patients of how you		-->
+	<!-- share information within the OHCA (such as for treatment, payment, and operations			-->
+	<!-- related to the OHCA). Also, describe the other entities covered by this notice and their	-->
+	<!-- service locations. For example, “This notice applies to Grace Community Hospitals and		-->
+	<!-- Emergency Services Incorporated which operate the emergency services within all Grace		-->
+	<!-- hospitals in the greater Dayton area.” 													-->
+		
+		<ohca_sharing>[edit customization_es.xml to change]</ohca_sharing>
+	
+	<!-- if you would like to disable the Spanish version of this notice, set the "spanish_version"	-->
+	<!-- to "off".  If you are supporting a spanish version of this notice, edit the spanish 	 	-->
+	<!-- version of this file, "customization_es.xml"											 	-->
+		
+		<spanish_version>on</spanish_version>
+	
+</entity>
